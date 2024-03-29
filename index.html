@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+<body>
+    <h1>Calculadora Doméstica</h1>
+    <form id="calculator-form">
+      <div>
+        <label for="aluguer">Aluguer da Casa:</label>
+        <input type="number" id="aluguer" name="aluguer">
+      </div>
+      <div>
+        <label for="alimentacao">Alimentação:</label>
+        <input type="number" id="alimentacao" name="alimentacao">
+      </div>
+      <div>
+        <label for="luz">Luz:</label>
+        <input type="number" id="luz" name="luz">
+      </div>
+      <div>
+        <label for="agua">Água:</label>
+        <input type="number" id="agua" name="agua">
+      </div>
+      <div>
+        <label for="internet">Internet:</label>
+        <input type="number" id="internet" name="internet">
+      </div>
+      <div>
+        <label for="limpeza">Materiais de Limpeza:</label>
+        <input type="number" id="limpeza" name="limpeza">
+      </div>
+      <div>
+        <label for="condominio">Condomínio:</label>
+        <input type="number" id="condominio" name="condominio">
+      </div>
+      <div>
+        <label for="garagem">Garagem:</label>
+        <input type="number" id="garagem" name="garagem">
+      </div>
+      <div>
+        <label for="manutencao">Manutenção da Casa:</label>
+        <input type="number" id="manutencao" name="manutencao">
+      </div>
+      <div id="custom-fields-container">
+        <!-- Campos personalizados serão adicionados aqui dinamicamente -->
+      </div>
+      <button type="button" id="add-custom-field-btn">Adicionar Campo Personalizado</button>
+      <button type="button" id="calculate-btn">Calcular</button>
+    </form>
+    <div id="total-container">
+      <p>Total Mensal: <span id="total">0</span></p>
+    </div>
+    <button type="button" id="export-excel-btn">Exportar para Excel</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+  
+  
+    <script src="./index.js"></script>
+  </body>
+</html>
