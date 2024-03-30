@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Doméstica</title>
+    <title>Document</title>
     <link rel="stylesheet" type="text/css" href="index.css">
 
 </head>
 <body>
-    <h1>Calculadora Doméstica</h1>
+  <a href="index_2.html" id="pretty-link">Ir para Registo mensal de despesa</a>
+    <h1>IA + Programação</h1>
     <form id="calculator-form">
       <div>
         <label for="aluguer">Aluguer da Casa:</label>
@@ -47,7 +48,6 @@
         <input type="number" id="manutencao" name="manutencao">
       </div>
       <div id="custom-fields-container">
-        <!-- Campos personalizados serão adicionados aqui dinamicamente -->
       </div>
       <button type="button" id="add-custom-field-btn">Adicionar Campo Personalizado</button>
       <button type="button" id="calculate-btn">Calcular</button>
@@ -56,8 +56,7 @@
       <p>Total Mensal: <span id="total">0</span></p>
     </div>
     <button type="button" id="export-excel-btn">Exportar para Excel</button>
-    <!-- Pretty link to index_2.html -->
-    <a href="index_2.html" id="pretty-link">Ir para Registo mensal de despesa</a>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
   
