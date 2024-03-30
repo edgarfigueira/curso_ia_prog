@@ -1,49 +1,45 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-form div {
-  margin-bottom: 10px;
-}
-
-label {
-  display: inline-block;
-  width: 150px;
-}
-
-#total-container {
-  margin-top: 20px;
-}
-
-#total {
-  font-weight: bold;
-}
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  form div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 150px;
+  }
+  
+  #total-container {
+    margin-top: 20px;
+  }
+  
+  #total {
+    font-weight: bold;
+  }
 
 /* CSS for the link */
 #pretty-link {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    z-index: 999; /* Ensure it's above other content */
+  position: fixed;
+  top: 20px; /* Adjust this value to change the distance from the top */
+  right: 20px; /* Adjust this value to change the distance from the right */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
-
-
 #pretty-link:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 
