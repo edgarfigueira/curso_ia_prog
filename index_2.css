@@ -50,28 +50,27 @@ button:hover {
 
 /* CSS for the link */
 #pretty-link {
-  display: none; /* Hide the link by default */
+    display: none; /* Hide the link by default */
 }
 
 @media only screen and (max-width: 768px) {
-  /* Media query for smartphones */
-  #pretty-link {
-      display: block; /* Show the link for smartphones */
-      position: fixed;
-      top: 20px; /* Adjust this value to change the distance from the top */
-      right: 20px; /* Adjust this value to change the distance from the right */
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-  }
+    /* Media query for smartphones */
+    #pretty-link {
+        display: block; /* Show the link for smartphones */
+        position: fixed;
+        top: 50%; /* Adjust to vertically center */
+        right: 50%; /* Adjust to horizontally center */
+        transform: translate(50%, -50%); /* Center the link */
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
 
-  #pretty-link:hover {
-      background-color: #0056b3;
-  }
+    #pretty-link:hover {
+        background-color: #0056b3;
+    }
 }
-#pretty-link:hover {
-  background-color: #0056b3;
-}
+
   
