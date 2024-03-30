@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index_2.css">
+</head>
+<body>
+    <div class="container">
+      <h1>Finanças Domésticas</h1>
+      <div id="toolbox">
+        <label for="expenseAmount">Informe o valor da despesa:</label>
+        <input type="number" id="expenseAmount">
+        <label for="expenseMonth">Selecione o mês:</label>
+        <select id="expenseMonth">
+          <option value="Janeiro">Janeiro</option>
+          <option value="Fevereiro">Fevereiro</option>
+          <option value="Março">Março</option>
+          <option value="Abril">Abril</option>
+          <option value="Maio">Maio</option>
+          <option value="Junho">Junho</option>
+          <option value="Julho">Julho</option>
+          <option value="Agosto">Agosto</option>
+          <option value="Setembro">Setembro</option>
+          <option value="Outubro">Outubro</option>
+          <option value="Novembro">Novembro</option>
+          <option value="Dezembro">Dezembro</option>
+        </select>
+        <button onclick="addExpense()">Adicionar Despesa</button>
+      </div>
+      <div class="flex-container">
+        <div id="expensesList">
+          <h2>Meses com Despesas:</h2>
+          <ul id="monthsList"></ul>
+        </div>
+        <div id="expensesChart"></div>
+      </div>
+    </div>
+    <!-- Pretty link to index_2.html -->
+    <a href="index.html" id="pretty-link">Go to Calculadora Doméstica</a>
+    <script src="index_2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  </body>
+</html>
