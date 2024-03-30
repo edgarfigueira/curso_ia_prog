@@ -28,26 +28,22 @@ label {
 
 /* CSS for the link */
 #pretty-link {
-    display: none; /* Hide the link by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 999; /* Ensure it's above other content */
 }
 
-@media only screen and (max-width: 768px) {
-    /* Media query for smartphones */
-    #pretty-link {
-        display: block; /* Show the link for smartphones */
-        position: fixed;
-        top: 50%; /* Adjust to vertically center */
-        right: 50%; /* Adjust to horizontally center */
-        transform: translate(50%, -50%); /* Center the link */
-        padding: 10px 20px;
-        background-color: #007bff;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-    }
 
-    #pretty-link:hover {
-        background-color: #0056b3;
-    }
+
+#pretty-link:hover {
+    background-color: #0056b3;
 }
+
 
